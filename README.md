@@ -1,4 +1,4 @@
-## gRPC
+## Protocol Buffers - gRPC
 
 Advantages:
 	- Strongly Typed
