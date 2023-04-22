@@ -13,8 +13,11 @@ Disadvantage:
 
 ### Protocol Buffers
 - syntax
+- package
+- import
 - message
 - service
+- enum
 
 ## Scalar Types
 - Numbers (Default value: 0)
@@ -33,7 +36,7 @@ Disadvantage:
 ## Tags
 	- Field names are not important for serialization and deserialization.
 	- Tags range 1 to 536,870,911
-	- Reserved Tags: 19,000 To 19,999
+	- Reserved Tags Google: 19,000 To 19,999
 
 ## Repeated fields
 - 0 or more elements of that type.
@@ -47,3 +50,9 @@ Disadvantage:
 
 ## Same Level Vs. Nested Messages & Enums
 - 
+
+
+## Golang package
+```
+go install google.golang.org/protobuf/cmd/protoc-gen-go@latest
+```
