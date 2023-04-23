@@ -25,6 +25,7 @@ build: 	generate
 generate:
 	protoc -I${PROTO_DIR} --go_opt=module=${PACKAGE} --go_out=. ${PROTO_DIR}/*.proto
 	mv ./${PACKAGE}/${PROTO_DIR}/*.go ${PROTO_DIR}/
+	rm -rf ./github.com
 
 bump: generate
 	go get -u ./...

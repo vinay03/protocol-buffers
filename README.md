@@ -16,6 +16,15 @@ Disadvantage:
 - package
 - import
 - message
+	- `oneof`: For specifying rule to expect one of the many fields.
+		```
+			oneof result {
+				string message = 1;
+				uint32 id = 2;
+			}
+		```
+	- `map`:
+		- `map<string, IdWrapper> ids = 1;`
 - service
 - enum
 

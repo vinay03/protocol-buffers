@@ -4,6 +4,6 @@ package example.dummy;
 
 option go_package = "github.com/vinay03/protocol-buffers/proto";
 
-message Dummy {
-	uint32 id = 1;
-}
+// message Dummy {
+// 	uint32 id = 1;
+// }
